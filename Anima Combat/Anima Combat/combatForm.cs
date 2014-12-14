@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using AnimaCombatLibrary;
+
 namespace Anima_Combat
 {
     public partial class combatForm : Form
@@ -108,22 +110,8 @@ namespace Anima_Combat
             {
                 initData.Add(new InitiativeStruct(initiativeData[x, 0], Convert.ToInt32(initiativeData[x, 1]), Convert.ToInt32(initiativeData[x, 2])));
             }
-        }
 
-        public struct InitiativeStruct
-        {
-            string charName;
-            int baseInitiative;
-            int naturaModifier;
-            int rolledInitiative;
-
-            public InitiativeStruct(string assignName, int baseInit, int naturaMod, int rolledInit = 0 )
-            {
-                charName = assignName;
-                baseInitiative = baseInit;
-                naturaModifier = naturaMod;
-                rolledInitiative = rolledInit;
-            }
+            AnimaCombatLibrary.Initiative.InitiativeRoll(ref initData);
         }
     }
 }
