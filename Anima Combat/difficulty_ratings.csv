@@ -1,0 +1,12 @@
+difficulty_id,difficulty,number_to_beat,explanation
+0,Routine,20,Normal actions almost anyone can do without thinking ? like going up stairs two at a time or hearing a loud noise. The Game Master will usually not ask the player to perform an Ability Check on these actions except under unusual circumstances.
+1,Easy,40,Actions we are all used to doing - like remembering a song. Even someone who knows nothing about the subject will usually be able to do this within a couple tries.
+2,Moderate,80,These are actions that require a little bit of knowledge or experience to accomplish consistently ? like picking a simple lock or curing a bothersome cold.
+3,Difficult,120,These are very problematic actions for an ordinary person. They require a good deal of ability or uncommon luck to perform ? such as scaling a wall unaided or doing circus-level juggling.
+4,Very Difficult,140,This is the upper limit of difficulty a normal person can hope to surmount. Examples would be walking a high-wire or doing death-defying trapeze routines.
+5,Absurd,180,Only the greatest champions or the incredibly gifted can acomplish such challenging tasks with any regularity. Quickly analyzing every possible move on a chess board is one example.
+6,Almost Impossible,240,"Even the very best in the world find these actions very difficult, and they usually fail. Catching a fly with a pair of chopsticks while blindfolded might be one example."
+7,Impossible,280,"These actions stand at the margin of what we call reality, but which, however miraculous or unbelievable, are at least physically conceivable. Dodging a bullet by calculating its trajectory is one example."
+8,Inhuman,320,"These are actions that are beyond logic, such running 100 yards in two seconds, or scoring a 17 on 18 holes of golf. Mere ability added to a die roll will not suffice when it comes to these feats. It will be necessary for the character to have access to Inhuman Actions to do these things. "
+9,Zen,440,"These are actions that are completely the scope of what we call reality ? like riding a beam of light. As with Inhuman tasks, mere ability will not enable Zen-level actions; the character will need
+a supernatural capacity to perform them."

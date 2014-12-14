@@ -1,0 +1,27 @@
+weapon_id,weapon_name,damage,speed,required_strength_onehand,required_strength_twohand,primary_attack_type,secondary_attack_type,weapon_type_1,Weapon_type_2,fortitude,breakage,presence,precision,throwable,complex,trapping_weapon,trapping,one_or_two_handed,two_handed,special
+0,Bastard Sword,70,-30,9,7,cut,impact,sword,two_handed,15,5,25,,,,,,TRUE,,
+1,Battle Axe,70,-30,7,,cut,impact,axe,,15,5,25,,TRUE,,,,,,
+2,Broadsword,55,-5,5,,cut,,sword,,15,3,25,,,,,,,,
+3,Cavalry Lance,80,-30,8,,thrust,,pole,,12,7,25,,,,,,,,special
+4,Cestus,25,10,3,,thrust,cut,short_arm,,11,-2,15,,,,,,,,
+5,Chain,25,0,6,,impact,,cord,,13,2,15,,,TRUE,,8,,,
+6,Club,30,0,5,,impact,,mace,,11,-2,15,,,,,,,,
+7,Dagger,30,20,3,,thrust,cut,short_arm,,10,-2,15,TRUE,TRUE,,,,,,
+8,Flail,40,0,6,,impact,,mace,cord,13,4,15,,,TRUE,,,,,
+9,Foil,35,15,3,,thrust,,sword,short_arm,9,-2,20,TRUE,,,,,,,
+10,Gladiator's Net,5,0,4,,impact,cut,cord,,13,-4,15,,TRUE,,,10,,,special
+11,Great Warhammer,70,-35,10,7,impact,,mace,,16,6,20,,,,,,TRUE,,
+12,Halberd,60,-15,11,6,cut,impact,pole,two_handed,15,4,20,,,,,,TRUE,,
+13,Hand Axe,45,0,5,,cut,,axe,,13,4,15,,TRUE,,,,,,
+14,Harpoon,35,-5,5,5,pole,,pole,two_handed,11,0,15,,TRUE,,,,TRUE,,
+15,Heavy Battle-Mace,60,-15,10,6,impact,,mace,two_handed,16,5,15,,,,,,TRUE,,
+16,Hook,30,10,3,,thrust,,short_arm,,11,-2,15,,,,,,,,
+17,Javelin,35,5,4,,thrust,,pole,,10,-2,20,,TRUE,,,,,,
+18,Lance,40,5,6,4,thrust,,pole,,13,2,25,,TRUE,,,,TRUE,,
+19,Large Multi-Headed Flail,80,-50,10,8,impact,,mace,two_handed,14,6,20,,,TRUE,,,,,
+20,Lasso,5,10,4,,impact,,cord,,9,-4,20,,,TRUE,,9,,,special
+21,Long Sword,50,0,6,,cut,,sword,,13,3,25,,,,,,,,
+22,Mace,40,0,6,,impact,,mace,,14,4,15,,,,,,,,
+23,Parrying Dagger,30,15,3,,thrust,cut,short_arm,,12,0,20,TRUE,TRUE,,TRUE,,,,
+24,Quarterstaff,30,10,4,4,impact,,pole,,11,0,30,,,,,,,TRUE,
+25,Rapier,40,15,4,,thrust,cut,sword,,11,2,20,TRUE,,,,,,,

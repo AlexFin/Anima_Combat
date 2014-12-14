@@ -1,0 +1,13 @@
+material_id,material_name,skill_modifier,max_quality,availability,description
+0,Stone,-80,0,Common,
+1,Bone,-60,0,Common,
+2,Bronze,-20,0,Common,
+3,Iron,10,0,Common,
+4,Steel,-20,5,Common,
+5,Black Steel,20,5,Uncommon,This is an exceptionally rare alloy. It is called“black” due to its dark coloring. Its principal characteristic is its incredible hardness.
+6,Illuminatum,80,5,Inaccessible,"This is a silvery metal of mystical nature characterized by how easily it is molded while hot. Once cooled, it becomes on of the most resistant of existing materials"
+7,White steel of Shivat,-40,10,Uncommon,"This whitish metal is found only in the mines of the island of Shivat. It is difficult to work, but when mastered, the results are excellent. In the eastern lands, the techniques for its working are kept as a tradition passed down from father to son."
+8,Elektra,20,10,Rare,Elektra is a rare alloy formed of black and white steel in exact proportions. The few artisans who know the formula guard it with utmost jealousy. This is the material usually used by the most powerful organizations for their creations.
+9,Ghestal Wood,-40,10,Inaccessible,"The wood of Ghestal can be obtained only from the Ramalen trees of the Duk´zarist. All indications are that none remain upon the face of Gaïa – though legends claim some might yet survive in old abandoned temples. Only the artisans of the Duk’zarist know the secret of working this wood. A character can specialize in its use, and that changes its difficulty to +40, but in exchange, he loses the ability to use other materials."
+10,Malebolgium,20,15,Inaccessible,"Malebolgium is the name given to the metal formed from the bones of the most ancient dragons. Though exceptionally difficult to forge, the results obtained with this metal are unequalled. It is said that a well-made malebolgium weapon is capable of cutting solid materials as though they were paper."
+11,Star Metal,80,15,Inaccessible,"A legendary metal of unknown origin, Star Metal supposedly carries supernatural powers, though most assume the material exists only in myth."
