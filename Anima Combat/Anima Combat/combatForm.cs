@@ -86,6 +86,11 @@ namespace Anima_Combat
             foreach (Control init in initiativePanel.Controls)
             {
                 NumericUpDown initUpDown = (NumericUpDown)init;
+                if (initUpDown.Text == "")
+                {
+                    MessageBox.Show("Please enter a base initiative for all characters");
+                    return;
+                }
                 initiativeData[x, 1] = initUpDown.Text;
                 x++;
             }
@@ -95,6 +100,11 @@ namespace Anima_Combat
             foreach (Control charName in namePanel.Controls)
             {
                 TextBox name = (TextBox)charName;
+                if (name.Text == "")
+                {
+                    MessageBox.Show("Please enter a name for all characters");
+                    return;
+                }
                 initiativeData[x, 0] = name.Text;
                 x++;
             }
@@ -104,6 +114,11 @@ namespace Anima_Combat
             foreach (Control natmod in naturaPanel.Controls)
             {
                 NumericUpDown natura = (NumericUpDown)natmod;
+                if (natura.Text == "")
+                {
+                    MessageBox.Show("Please enter a natura for all characters");
+                    return;
+                }
                 initiativeData[x, 2] = natura.Text;
                 x++;
             }
