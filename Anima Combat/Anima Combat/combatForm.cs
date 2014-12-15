@@ -56,6 +56,8 @@ namespace Anima_Combat
             initiativeUpDown.Size = new Size(50, 20);
             initiativeUpDown.Name = "initiativeUpDown_" + (initiativePanel.Controls.Count + 1);
             initiativeUpDown.Maximum = 10000;
+            initiativeUpDown.Minimum = -1000;
+
             // textbox.Text = initiativeUpDown.Name; // Checks name of numeric up down
             initiativePanel.Controls.Add(initiativeUpDown);
 
