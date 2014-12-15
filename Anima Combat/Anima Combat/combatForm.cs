@@ -129,7 +129,7 @@ namespace Anima_Combat
                 initData.Add(new InitiativeStruct(initiativeData[x, 0], Convert.ToInt32(initiativeData[x, 1]), Convert.ToInt32(initiativeData[x, 2])));
             }
 
-            AnimaCombatLibrary.Initiative.InitiativeRoll(ref initData);
+            AnimaCombatLibrary.Combat.InitiativeRoll(ref initData);
 
             x = 0;
 

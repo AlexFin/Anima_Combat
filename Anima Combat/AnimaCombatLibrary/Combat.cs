@@ -8,7 +8,7 @@ using AnimaRollLibrary;
 
 namespace AnimaCombatLibrary
 {
-    public class Initiative
+    public class Combat
     {
         //Rolls all initiatives for a new round
         //TODO: Roll logging
@@ -24,6 +24,14 @@ namespace AnimaCombatLibrary
 
             //Sort
             initiatives.Sort();
+        }
+
+        //TODO: Calculate the result of an attack
+        public static string Attack(int baseDamage, int offensiveBonus, int armor, int damageBarrier, int attackerNatura, int defenderNatura)
+        {
+            string log = "";
+
+            return log;
         }
     }
 }

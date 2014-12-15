@@ -31,7 +31,7 @@ namespace AnimaRollLibrary
             return DiceRoll(1, size);
         }
 
-        #region OpenRoll helper functions
+        #region OpenRoll helper functions and enums
         //Checks for 'normal' open rolls
         private static bool IsOpen(int number, int consecutiveCrits, int naturaModifier)
         {
@@ -77,11 +77,22 @@ namespace AnimaRollLibrary
 
             return false;
         }
+
+        //Types of open rolls that might have special rules
+        public enum OpenRollTypes
+        {
+            SkillRoll = 1,
+            AttackRoll = 2,
+            DefenseRoll = 3,
+            InitiativeRoll = 4
+        }
         #endregion
+
+
 
         //Rolls 1d100 with open rolls
         //TODO: add roll logging argument
-        public static int OpenRoll(int failRange, int naturaModifier = 0)
+        public static int OpenRoll(int failRange, int naturaModifier = 0, OpenRollTypes rollType = OpenRollTypes.SkillRoll)
         {
             int result = 0;
 

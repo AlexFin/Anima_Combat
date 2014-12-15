@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C294B56E-9FAC-49A7-B569-39C8C3EB8AD0}</ProjectGuid>
+    <ProjectGuid>{047B880C-A609-49A7-9E01-96B5EB09D8CF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AnimaCombat</RootNamespace>
-    <AssemblyName>AnimaCombat</AssemblyName>
+    <RootNamespace>ObjectLibrary</RootNamespace>
+    <AssemblyName>CharacterLibrary</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -39,15 +39,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Combat.cs" />
-    <Compile Include="InitiativeStruct.cs" />
+    <Compile Include="Armor.cs" />
+    <Compile Include="Character.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\AnimaRollLibrary\AnimaRollLibrary.csproj">
-      <Project>{dcf95d80-d9cf-429a-b543-6c8ca750c1ec}</Project>
-      <Name>AnimaRollLibrary</Name>
-    </ProjectReference>
+    <Compile Include="Weapon.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
