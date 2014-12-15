@@ -38,11 +38,11 @@
             // Title
             // 
             this.Title.AutoSize = true;
-            this.Title.Location = new System.Drawing.Point(85, 9);
+            this.Title.Location = new System.Drawing.Point(51, 9);
             this.Title.Name = "Title";
-            this.Title.Size = new System.Drawing.Size(115, 13);
+            this.Title.Size = new System.Drawing.Size(182, 13);
             this.Title.TabIndex = 0;
-            this.Title.Text = "Game Master Assistant";
+            this.Title.Text = "Game Master Assistant V 0.0.1 Alpha";
             this.Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // newChar

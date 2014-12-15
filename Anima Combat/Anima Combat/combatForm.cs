@@ -14,6 +14,7 @@ namespace Anima_Combat
 {
     public partial class combatForm : Form
     {
+
         public combatForm()
         {
             InitializeComponent();
@@ -38,33 +39,33 @@ namespace Anima_Combat
             {
                 addCombatant.Hide();
             }
+            int itemCount = namePanel.Controls.Count;
             TextBox textbox = new TextBox();
-            textbox.Location = new System.Drawing.Point(3, 25 * namePanel.Controls.Count);
+            textbox.Location = new System.Drawing.Point(3, 25 * itemCount);
             textbox.Size = new System.Drawing.Size(110, 20);
-            textbox.Name = "textbox_" + (namePanel.Controls.Count + 1 );
+            textbox.Name = "textbox_" + (itemCount + 1 );
             // textbox.Text = textbox.Name; // Checks name of textbox
             namePanel.Controls.Add(textbox);
 
             Label label = new Label();
-            label.Location = new Point(3, 25 * rolledInitiativePanel.Controls.Count);
-            label.Name = "rolledInitiative_" + (rolledInitiativePanel.Controls.Count + 1);
+            label.Location = new Point(3, 25 * itemCount);
+            label.Name = "rolledInitiative_" + (itemCount + 1);
             label.Text = "0";
             rolledInitiativePanel.Controls.Add(label);
 
             NumericUpDown initiativeUpDown = new NumericUpDown();
-            initiativeUpDown.Location = new Point(3, 25 * initiativePanel.Controls.Count);
+            initiativeUpDown.Location = new Point(3, 25 * itemCount);
             initiativeUpDown.Size = new Size(50, 20);
-            initiativeUpDown.Name = "initiativeUpDown_" + (initiativePanel.Controls.Count + 1);
+            initiativeUpDown.Name = "initiativeUpDown_" + (itemCount + 1);
             initiativeUpDown.Maximum = 10000;
             initiativeUpDown.Minimum = -1000;
-
             // textbox.Text = initiativeUpDown.Name; // Checks name of numeric up down
             initiativePanel.Controls.Add(initiativeUpDown);
 
             NumericUpDown naturaUpDown = new NumericUpDown();
-            naturaUpDown.Location = new Point(3, 25 * naturaPanel.Controls.Count);
+            naturaUpDown.Location = new Point(3, 25 * itemCount);
             naturaUpDown.Size = new Size(35, 20);
-            naturaUpDown.Name = "naturaUpDown_" + (naturaPanel.Controls.Count + 1);
+            naturaUpDown.Name = "naturaUpDown_" + (itemCount + 1);
             naturaUpDown.Maximum = 20;
             // textbox.Text = numericUpDown.Name; // Checks name of numeric up down
             naturaPanel.Controls.Add(naturaUpDown);
