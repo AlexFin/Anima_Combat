@@ -8,11 +8,13 @@ namespace AnimaRollLibrary
 {
     public class Roll
     {
+        //Static singleton roll method
+        private static Random rand = new Random();
+
         #region Static Functions
         //Rolls nDx
         public static int DiceRoll(int number, int size)
         {
-            Random rand = new Random();
             int sum = 0;
 
             for (int c = 0; c < number; c++)

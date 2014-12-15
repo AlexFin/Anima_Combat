@@ -31,21 +31,21 @@ namespace AnimaCombatLibrary
 
             else
             {
-                int result = this.rolledInitiative.CompareTo(compareInit.rolledInitiative);
+                int result = -this.rolledInitiative.CompareTo(compareInit.rolledInitiative);
                 //Tiebreak using base initiative
                 if (result == 0)
                 {
-                    result = this.baseInitiative.CompareTo(compareInit.baseInitiative);
+                    result = -this.baseInitiative.CompareTo(compareInit.baseInitiative);
                 }
                 //Then natura
                 if (result == 0)
                 {
-                    result = this.naturaModifier.CompareTo(compareInit.naturaModifier);
+                    result = -this.naturaModifier.CompareTo(compareInit.naturaModifier);
                 }
                 //Then name
                 if (result == 0)
                 {
-                    result = this.charName.CompareTo(compareInit.charName);
+                    result = -this.charName.CompareTo(compareInit.charName);
                 }
                 return result;
             }
