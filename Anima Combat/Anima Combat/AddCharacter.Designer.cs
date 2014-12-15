@@ -69,7 +69,7 @@
             this.dodgeLabel = new System.Windows.Forms.Label();
             this.blockLabel = new System.Windows.Forms.Label();
             this.attackLabel = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.resistPanel = new System.Windows.Forms.Panel();
             this.resistLabel = new System.Windows.Forms.Label();
             this.physicalResistLabel = new System.Windows.Forms.Label();
             this.diseaseResistLabel = new System.Windows.Forms.Label();
@@ -82,6 +82,39 @@
             this.poisonResistAmount = new System.Windows.Forms.TextBox();
             this.magicResistAmount = new System.Windows.Forms.TextBox();
             this.psychicResistAmount = new System.Windows.Forms.TextBox();
+            this.armorPanel = new System.Windows.Forms.Panel();
+            this.headArmorLabel = new System.Windows.Forms.Label();
+            this.torsoArmorLabel = new System.Windows.Forms.Label();
+            this.legArmorLabel = new System.Windows.Forms.Label();
+            this.armorTypeLabel = new System.Windows.Forms.Label();
+            this.cutTypeLabel = new System.Windows.Forms.Label();
+            this.impTypeLabel = new System.Windows.Forms.Label();
+            this.thrTypeLabel = new System.Windows.Forms.Label();
+            this.heatTypeLabel = new System.Windows.Forms.Label();
+            this.eleTypeLabel = new System.Windows.Forms.Label();
+            this.coldTypeLabel = new System.Windows.Forms.Label();
+            this.eneTypeLabel = new System.Windows.Forms.Label();
+            this.headCutAmount = new System.Windows.Forms.NumericUpDown();
+            this.headImpAmount = new System.Windows.Forms.NumericUpDown();
+            this.headThrAmount = new System.Windows.Forms.NumericUpDown();
+            this.headHeatAmount = new System.Windows.Forms.NumericUpDown();
+            this.headEleAmount = new System.Windows.Forms.NumericUpDown();
+            this.headColdAmount = new System.Windows.Forms.NumericUpDown();
+            this.headEneAmount = new System.Windows.Forms.NumericUpDown();
+            this.torsoEneAmount = new System.Windows.Forms.NumericUpDown();
+            this.torsoColdAmount = new System.Windows.Forms.NumericUpDown();
+            this.torsoEleAmount = new System.Windows.Forms.NumericUpDown();
+            this.torsoHeatAmount = new System.Windows.Forms.NumericUpDown();
+            this.torsoThrAmount = new System.Windows.Forms.NumericUpDown();
+            this.torsoImpAmount = new System.Windows.Forms.NumericUpDown();
+            this.torsoCutAmount = new System.Windows.Forms.NumericUpDown();
+            this.legEneAmount = new System.Windows.Forms.NumericUpDown();
+            this.legColdAmount = new System.Windows.Forms.NumericUpDown();
+            this.legEleAmount = new System.Windows.Forms.NumericUpDown();
+            this.legHeatAmount = new System.Windows.Forms.NumericUpDown();
+            this.legThrAmount = new System.Windows.Forms.NumericUpDown();
+            this.legImpAmount = new System.Windows.Forms.NumericUpDown();
+            this.legCutAmount = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.agiStat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.conStat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dexStat)).BeginInit();
@@ -96,7 +129,29 @@
             this.mainPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.levelUpDown)).BeginInit();
             this.primarySkillsPanel.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.resistPanel.SuspendLayout();
+            this.armorPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.headCutAmount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.headImpAmount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.headThrAmount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.headHeatAmount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.headEleAmount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.headColdAmount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.headEneAmount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.torsoEneAmount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.torsoColdAmount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.torsoEleAmount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.torsoHeatAmount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.torsoThrAmount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.torsoImpAmount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.torsoCutAmount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.legEneAmount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.legColdAmount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.legEleAmount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.legHeatAmount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.legThrAmount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.legImpAmount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.legCutAmount)).BeginInit();
             this.SuspendLayout();
             // 
             // textName
@@ -451,14 +506,14 @@
             this.primarySkillsPanel.Controls.Add(this.dodgeLabel);
             this.primarySkillsPanel.Controls.Add(this.blockLabel);
             this.primarySkillsPanel.Controls.Add(this.attackLabel);
-            this.primarySkillsPanel.Location = new System.Drawing.Point(123, 141);
+            this.primarySkillsPanel.Location = new System.Drawing.Point(12, 280);
             this.primarySkillsPanel.Name = "primarySkillsPanel";
-            this.primarySkillsPanel.Size = new System.Drawing.Size(89, 56);
+            this.primarySkillsPanel.Size = new System.Drawing.Size(130, 43);
             this.primarySkillsPanel.TabIndex = 30;
             // 
             // dodgeAmount
             // 
-            this.dodgeAmount.Location = new System.Drawing.Point(49, 35);
+            this.dodgeAmount.Location = new System.Drawing.Point(84, 20);
             this.dodgeAmount.Name = "dodgeAmount";
             this.dodgeAmount.Size = new System.Drawing.Size(35, 20);
             this.dodgeAmount.TabIndex = 5;
@@ -466,7 +521,7 @@
             // 
             // blockAmount
             // 
-            this.blockAmount.Location = new System.Drawing.Point(49, 18);
+            this.blockAmount.Location = new System.Drawing.Point(47, 20);
             this.blockAmount.Name = "blockAmount";
             this.blockAmount.Size = new System.Drawing.Size(35, 20);
             this.blockAmount.TabIndex = 4;
@@ -474,7 +529,7 @@
             // 
             // attackAmount
             // 
-            this.attackAmount.Location = new System.Drawing.Point(49, 1);
+            this.attackAmount.Location = new System.Drawing.Point(6, 20);
             this.attackAmount.Name = "attackAmount";
             this.attackAmount.Size = new System.Drawing.Size(35, 20);
             this.attackAmount.TabIndex = 3;
@@ -483,7 +538,7 @@
             // dodgeLabel
             // 
             this.dodgeLabel.AutoSize = true;
-            this.dodgeLabel.Location = new System.Drawing.Point(4, 38);
+            this.dodgeLabel.Location = new System.Drawing.Point(84, 4);
             this.dodgeLabel.Name = "dodgeLabel";
             this.dodgeLabel.Size = new System.Drawing.Size(39, 13);
             this.dodgeLabel.TabIndex = 2;
@@ -492,7 +547,7 @@
             // blockLabel
             // 
             this.blockLabel.AutoSize = true;
-            this.blockLabel.Location = new System.Drawing.Point(4, 21);
+            this.blockLabel.Location = new System.Drawing.Point(44, 4);
             this.blockLabel.Name = "blockLabel";
             this.blockLabel.Size = new System.Drawing.Size(34, 13);
             this.blockLabel.TabIndex = 1;
@@ -507,24 +562,24 @@
             this.attackLabel.TabIndex = 0;
             this.attackLabel.Text = "Attack";
             // 
-            // panel1
+            // resistPanel
             // 
-            this.panel1.Controls.Add(this.psychicResistAmount);
-            this.panel1.Controls.Add(this.magicResistAmount);
-            this.panel1.Controls.Add(this.poisonResistAmount);
-            this.panel1.Controls.Add(this.diseaseResistAmount);
-            this.panel1.Controls.Add(this.physicalResistAmount);
-            this.panel1.Controls.Add(this.resistTotalLabel);
-            this.panel1.Controls.Add(this.psyResistLabel);
-            this.panel1.Controls.Add(this.magicResistLabel);
-            this.panel1.Controls.Add(this.poisonResistLabel);
-            this.panel1.Controls.Add(this.diseaseResistLabel);
-            this.panel1.Controls.Add(this.physicalResistLabel);
-            this.panel1.Controls.Add(this.resistLabel);
-            this.panel1.Location = new System.Drawing.Point(257, 9);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(123, 129);
-            this.panel1.TabIndex = 31;
+            this.resistPanel.Controls.Add(this.psychicResistAmount);
+            this.resistPanel.Controls.Add(this.magicResistAmount);
+            this.resistPanel.Controls.Add(this.poisonResistAmount);
+            this.resistPanel.Controls.Add(this.diseaseResistAmount);
+            this.resistPanel.Controls.Add(this.physicalResistAmount);
+            this.resistPanel.Controls.Add(this.resistTotalLabel);
+            this.resistPanel.Controls.Add(this.psyResistLabel);
+            this.resistPanel.Controls.Add(this.magicResistLabel);
+            this.resistPanel.Controls.Add(this.poisonResistLabel);
+            this.resistPanel.Controls.Add(this.diseaseResistLabel);
+            this.resistPanel.Controls.Add(this.physicalResistLabel);
+            this.resistPanel.Controls.Add(this.resistLabel);
+            this.resistPanel.Location = new System.Drawing.Point(122, 143);
+            this.resistPanel.Name = "resistPanel";
+            this.resistPanel.Size = new System.Drawing.Size(123, 129);
+            this.resistPanel.TabIndex = 31;
             // 
             // resistLabel
             // 
@@ -624,12 +679,298 @@
             this.psychicResistAmount.Size = new System.Drawing.Size(38, 20);
             this.psychicResistAmount.TabIndex = 11;
             // 
+            // armorPanel
+            // 
+            this.armorPanel.Controls.Add(this.legEneAmount);
+            this.armorPanel.Controls.Add(this.legColdAmount);
+            this.armorPanel.Controls.Add(this.legEleAmount);
+            this.armorPanel.Controls.Add(this.legHeatAmount);
+            this.armorPanel.Controls.Add(this.legThrAmount);
+            this.armorPanel.Controls.Add(this.legImpAmount);
+            this.armorPanel.Controls.Add(this.legCutAmount);
+            this.armorPanel.Controls.Add(this.torsoEneAmount);
+            this.armorPanel.Controls.Add(this.torsoColdAmount);
+            this.armorPanel.Controls.Add(this.torsoEleAmount);
+            this.armorPanel.Controls.Add(this.torsoHeatAmount);
+            this.armorPanel.Controls.Add(this.torsoThrAmount);
+            this.armorPanel.Controls.Add(this.torsoImpAmount);
+            this.armorPanel.Controls.Add(this.torsoCutAmount);
+            this.armorPanel.Controls.Add(this.headEneAmount);
+            this.armorPanel.Controls.Add(this.headColdAmount);
+            this.armorPanel.Controls.Add(this.headEleAmount);
+            this.armorPanel.Controls.Add(this.headHeatAmount);
+            this.armorPanel.Controls.Add(this.headThrAmount);
+            this.armorPanel.Controls.Add(this.headImpAmount);
+            this.armorPanel.Controls.Add(this.headCutAmount);
+            this.armorPanel.Controls.Add(this.eneTypeLabel);
+            this.armorPanel.Controls.Add(this.coldTypeLabel);
+            this.armorPanel.Controls.Add(this.eleTypeLabel);
+            this.armorPanel.Controls.Add(this.heatTypeLabel);
+            this.armorPanel.Controls.Add(this.thrTypeLabel);
+            this.armorPanel.Controls.Add(this.impTypeLabel);
+            this.armorPanel.Controls.Add(this.cutTypeLabel);
+            this.armorPanel.Controls.Add(this.armorTypeLabel);
+            this.armorPanel.Controls.Add(this.legArmorLabel);
+            this.armorPanel.Controls.Add(this.torsoArmorLabel);
+            this.armorPanel.Controls.Add(this.headArmorLabel);
+            this.armorPanel.Location = new System.Drawing.Point(268, 9);
+            this.armorPanel.Name = "armorPanel";
+            this.armorPanel.Size = new System.Drawing.Size(293, 90);
+            this.armorPanel.TabIndex = 32;
+            // 
+            // headArmorLabel
+            // 
+            this.headArmorLabel.AutoSize = true;
+            this.headArmorLabel.Location = new System.Drawing.Point(3, 23);
+            this.headArmorLabel.Name = "headArmorLabel";
+            this.headArmorLabel.Size = new System.Drawing.Size(33, 13);
+            this.headArmorLabel.TabIndex = 0;
+            this.headArmorLabel.Text = "Head";
+            // 
+            // torsoArmorLabel
+            // 
+            this.torsoArmorLabel.AutoSize = true;
+            this.torsoArmorLabel.Location = new System.Drawing.Point(2, 46);
+            this.torsoArmorLabel.Name = "torsoArmorLabel";
+            this.torsoArmorLabel.Size = new System.Drawing.Size(34, 13);
+            this.torsoArmorLabel.TabIndex = 1;
+            this.torsoArmorLabel.Text = "Torso";
+            // 
+            // legArmorLabel
+            // 
+            this.legArmorLabel.AutoSize = true;
+            this.legArmorLabel.Location = new System.Drawing.Point(3, 69);
+            this.legArmorLabel.Name = "legArmorLabel";
+            this.legArmorLabel.Size = new System.Drawing.Size(30, 13);
+            this.legArmorLabel.TabIndex = 2;
+            this.legArmorLabel.Text = "Legs";
+            // 
+            // armorTypeLabel
+            // 
+            this.armorTypeLabel.AutoSize = true;
+            this.armorTypeLabel.Location = new System.Drawing.Point(3, 10);
+            this.armorTypeLabel.Name = "armorTypeLabel";
+            this.armorTypeLabel.Size = new System.Drawing.Size(67, 13);
+            this.armorTypeLabel.TabIndex = 3;
+            this.armorTypeLabel.Text = "Armor Type: ";
+            // 
+            // cutTypeLabel
+            // 
+            this.cutTypeLabel.AutoSize = true;
+            this.cutTypeLabel.Location = new System.Drawing.Point(72, 10);
+            this.cutTypeLabel.Name = "cutTypeLabel";
+            this.cutTypeLabel.Size = new System.Drawing.Size(23, 13);
+            this.cutTypeLabel.TabIndex = 4;
+            this.cutTypeLabel.Text = "Cut";
+            // 
+            // impTypeLabel
+            // 
+            this.impTypeLabel.AutoSize = true;
+            this.impTypeLabel.Location = new System.Drawing.Point(101, 10);
+            this.impTypeLabel.Name = "impTypeLabel";
+            this.impTypeLabel.Size = new System.Drawing.Size(24, 13);
+            this.impTypeLabel.TabIndex = 5;
+            this.impTypeLabel.Text = "Imp";
+            // 
+            // thrTypeLabel
+            // 
+            this.thrTypeLabel.AutoSize = true;
+            this.thrTypeLabel.Location = new System.Drawing.Point(131, 10);
+            this.thrTypeLabel.Name = "thrTypeLabel";
+            this.thrTypeLabel.Size = new System.Drawing.Size(23, 13);
+            this.thrTypeLabel.TabIndex = 6;
+            this.thrTypeLabel.Text = "Thr";
+            // 
+            // heatTypeLabel
+            // 
+            this.heatTypeLabel.AutoSize = true;
+            this.heatTypeLabel.Location = new System.Drawing.Point(160, 10);
+            this.heatTypeLabel.Name = "heatTypeLabel";
+            this.heatTypeLabel.Size = new System.Drawing.Size(30, 13);
+            this.heatTypeLabel.TabIndex = 7;
+            this.heatTypeLabel.Text = "Heat";
+            // 
+            // eleTypeLabel
+            // 
+            this.eleTypeLabel.AutoSize = true;
+            this.eleTypeLabel.Location = new System.Drawing.Point(196, 10);
+            this.eleTypeLabel.Name = "eleTypeLabel";
+            this.eleTypeLabel.Size = new System.Drawing.Size(22, 13);
+            this.eleTypeLabel.TabIndex = 8;
+            this.eleTypeLabel.Text = "Ele";
+            // 
+            // coldTypeLabel
+            // 
+            this.coldTypeLabel.AutoSize = true;
+            this.coldTypeLabel.Location = new System.Drawing.Point(224, 10);
+            this.coldTypeLabel.Name = "coldTypeLabel";
+            this.coldTypeLabel.Size = new System.Drawing.Size(28, 13);
+            this.coldTypeLabel.TabIndex = 9;
+            this.coldTypeLabel.Text = "Cold";
+            // 
+            // eneTypeLabel
+            // 
+            this.eneTypeLabel.AutoSize = true;
+            this.eneTypeLabel.Location = new System.Drawing.Point(258, 10);
+            this.eneTypeLabel.Name = "eneTypeLabel";
+            this.eneTypeLabel.Size = new System.Drawing.Size(26, 13);
+            this.eneTypeLabel.TabIndex = 10;
+            this.eneTypeLabel.Text = "Ene";
+            // 
+            // headCutAmount
+            // 
+            this.headCutAmount.Location = new System.Drawing.Point(67, 23);
+            this.headCutAmount.Name = "headCutAmount";
+            this.headCutAmount.Size = new System.Drawing.Size(28, 20);
+            this.headCutAmount.TabIndex = 11;
+            // 
+            // headImpAmount
+            // 
+            this.headImpAmount.Location = new System.Drawing.Point(97, 23);
+            this.headImpAmount.Name = "headImpAmount";
+            this.headImpAmount.Size = new System.Drawing.Size(28, 20);
+            this.headImpAmount.TabIndex = 12;
+            // 
+            // headThrAmount
+            // 
+            this.headThrAmount.Location = new System.Drawing.Point(126, 23);
+            this.headThrAmount.Name = "headThrAmount";
+            this.headThrAmount.Size = new System.Drawing.Size(28, 20);
+            this.headThrAmount.TabIndex = 13;
+            // 
+            // headHeatAmount
+            // 
+            this.headHeatAmount.Location = new System.Drawing.Point(162, 23);
+            this.headHeatAmount.Name = "headHeatAmount";
+            this.headHeatAmount.Size = new System.Drawing.Size(28, 20);
+            this.headHeatAmount.TabIndex = 14;
+            // 
+            // headEleAmount
+            // 
+            this.headEleAmount.Location = new System.Drawing.Point(190, 23);
+            this.headEleAmount.Name = "headEleAmount";
+            this.headEleAmount.Size = new System.Drawing.Size(28, 20);
+            this.headEleAmount.TabIndex = 15;
+            // 
+            // headColdAmount
+            // 
+            this.headColdAmount.Location = new System.Drawing.Point(224, 23);
+            this.headColdAmount.Name = "headColdAmount";
+            this.headColdAmount.Size = new System.Drawing.Size(28, 20);
+            this.headColdAmount.TabIndex = 16;
+            // 
+            // headEneAmount
+            // 
+            this.headEneAmount.Location = new System.Drawing.Point(256, 23);
+            this.headEneAmount.Name = "headEneAmount";
+            this.headEneAmount.Size = new System.Drawing.Size(28, 20);
+            this.headEneAmount.TabIndex = 17;
+            // 
+            // torsoEneAmount
+            // 
+            this.torsoEneAmount.Location = new System.Drawing.Point(256, 44);
+            this.torsoEneAmount.Name = "torsoEneAmount";
+            this.torsoEneAmount.Size = new System.Drawing.Size(28, 20);
+            this.torsoEneAmount.TabIndex = 24;
+            // 
+            // torsoColdAmount
+            // 
+            this.torsoColdAmount.Location = new System.Drawing.Point(224, 46);
+            this.torsoColdAmount.Name = "torsoColdAmount";
+            this.torsoColdAmount.Size = new System.Drawing.Size(28, 20);
+            this.torsoColdAmount.TabIndex = 23;
+            // 
+            // torsoEleAmount
+            // 
+            this.torsoEleAmount.Location = new System.Drawing.Point(190, 46);
+            this.torsoEleAmount.Name = "torsoEleAmount";
+            this.torsoEleAmount.Size = new System.Drawing.Size(28, 20);
+            this.torsoEleAmount.TabIndex = 22;
+            // 
+            // torsoHeatAmount
+            // 
+            this.torsoHeatAmount.Location = new System.Drawing.Point(162, 46);
+            this.torsoHeatAmount.Name = "torsoHeatAmount";
+            this.torsoHeatAmount.Size = new System.Drawing.Size(28, 20);
+            this.torsoHeatAmount.TabIndex = 21;
+            // 
+            // torsoThrAmount
+            // 
+            this.torsoThrAmount.Location = new System.Drawing.Point(126, 46);
+            this.torsoThrAmount.Name = "torsoThrAmount";
+            this.torsoThrAmount.Size = new System.Drawing.Size(28, 20);
+            this.torsoThrAmount.TabIndex = 20;
+            // 
+            // torsoImpAmount
+            // 
+            this.torsoImpAmount.Location = new System.Drawing.Point(97, 46);
+            this.torsoImpAmount.Name = "torsoImpAmount";
+            this.torsoImpAmount.Size = new System.Drawing.Size(28, 20);
+            this.torsoImpAmount.TabIndex = 19;
+            // 
+            // torsoCutAmount
+            // 
+            this.torsoCutAmount.Location = new System.Drawing.Point(67, 46);
+            this.torsoCutAmount.Name = "torsoCutAmount";
+            this.torsoCutAmount.Size = new System.Drawing.Size(28, 20);
+            this.torsoCutAmount.TabIndex = 18;
+            // 
+            // legEneAmount
+            // 
+            this.legEneAmount.Location = new System.Drawing.Point(256, 67);
+            this.legEneAmount.Name = "legEneAmount";
+            this.legEneAmount.Size = new System.Drawing.Size(28, 20);
+            this.legEneAmount.TabIndex = 31;
+            // 
+            // legColdAmount
+            // 
+            this.legColdAmount.Location = new System.Drawing.Point(224, 67);
+            this.legColdAmount.Name = "legColdAmount";
+            this.legColdAmount.Size = new System.Drawing.Size(28, 20);
+            this.legColdAmount.TabIndex = 30;
+            // 
+            // legEleAmount
+            // 
+            this.legEleAmount.Location = new System.Drawing.Point(190, 67);
+            this.legEleAmount.Name = "legEleAmount";
+            this.legEleAmount.Size = new System.Drawing.Size(28, 20);
+            this.legEleAmount.TabIndex = 29;
+            // 
+            // legHeatAmount
+            // 
+            this.legHeatAmount.Location = new System.Drawing.Point(162, 67);
+            this.legHeatAmount.Name = "legHeatAmount";
+            this.legHeatAmount.Size = new System.Drawing.Size(28, 20);
+            this.legHeatAmount.TabIndex = 28;
+            // 
+            // legThrAmount
+            // 
+            this.legThrAmount.Location = new System.Drawing.Point(126, 67);
+            this.legThrAmount.Name = "legThrAmount";
+            this.legThrAmount.Size = new System.Drawing.Size(28, 20);
+            this.legThrAmount.TabIndex = 27;
+            // 
+            // legImpAmount
+            // 
+            this.legImpAmount.Location = new System.Drawing.Point(97, 67);
+            this.legImpAmount.Name = "legImpAmount";
+            this.legImpAmount.Size = new System.Drawing.Size(28, 20);
+            this.legImpAmount.TabIndex = 26;
+            // 
+            // legCutAmount
+            // 
+            this.legCutAmount.Location = new System.Drawing.Point(67, 67);
+            this.legCutAmount.Name = "legCutAmount";
+            this.legCutAmount.Size = new System.Drawing.Size(28, 20);
+            this.legCutAmount.TabIndex = 25;
+            // 
             // AddCharacter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(573, 643);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.armorPanel);
+            this.Controls.Add(this.resistPanel);
             this.Controls.Add(this.primarySkillsPanel);
             this.Controls.Add(this.mainPanel);
             this.Controls.Add(this.panel2);
@@ -656,8 +997,31 @@
             ((System.ComponentModel.ISupportInitialize)(this.levelUpDown)).EndInit();
             this.primarySkillsPanel.ResumeLayout(false);
             this.primarySkillsPanel.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.resistPanel.ResumeLayout(false);
+            this.resistPanel.PerformLayout();
+            this.armorPanel.ResumeLayout(false);
+            this.armorPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.headCutAmount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.headImpAmount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.headThrAmount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.headHeatAmount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.headEleAmount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.headColdAmount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.headEneAmount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.torsoEneAmount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.torsoColdAmount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.torsoEleAmount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.torsoHeatAmount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.torsoThrAmount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.torsoImpAmount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.torsoCutAmount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.legEneAmount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.legColdAmount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.legEleAmount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.legHeatAmount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.legThrAmount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.legImpAmount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.legCutAmount)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -705,7 +1069,7 @@
         private System.Windows.Forms.Label dodgeLabel;
         private System.Windows.Forms.Label blockLabel;
         private System.Windows.Forms.Label attackLabel;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel resistPanel;
         private System.Windows.Forms.Label resistTotalLabel;
         private System.Windows.Forms.Label psyResistLabel;
         private System.Windows.Forms.Label magicResistLabel;
@@ -718,5 +1082,38 @@
         private System.Windows.Forms.TextBox poisonResistAmount;
         private System.Windows.Forms.TextBox diseaseResistAmount;
         private System.Windows.Forms.TextBox physicalResistAmount;
+        private System.Windows.Forms.Panel armorPanel;
+        private System.Windows.Forms.NumericUpDown legEneAmount;
+        private System.Windows.Forms.NumericUpDown legColdAmount;
+        private System.Windows.Forms.NumericUpDown legEleAmount;
+        private System.Windows.Forms.NumericUpDown legHeatAmount;
+        private System.Windows.Forms.NumericUpDown legThrAmount;
+        private System.Windows.Forms.NumericUpDown legImpAmount;
+        private System.Windows.Forms.NumericUpDown legCutAmount;
+        private System.Windows.Forms.NumericUpDown torsoEneAmount;
+        private System.Windows.Forms.NumericUpDown torsoColdAmount;
+        private System.Windows.Forms.NumericUpDown torsoEleAmount;
+        private System.Windows.Forms.NumericUpDown torsoHeatAmount;
+        private System.Windows.Forms.NumericUpDown torsoThrAmount;
+        private System.Windows.Forms.NumericUpDown torsoImpAmount;
+        private System.Windows.Forms.NumericUpDown torsoCutAmount;
+        private System.Windows.Forms.NumericUpDown headEneAmount;
+        private System.Windows.Forms.NumericUpDown headColdAmount;
+        private System.Windows.Forms.NumericUpDown headEleAmount;
+        private System.Windows.Forms.NumericUpDown headHeatAmount;
+        private System.Windows.Forms.NumericUpDown headThrAmount;
+        private System.Windows.Forms.NumericUpDown headImpAmount;
+        private System.Windows.Forms.NumericUpDown headCutAmount;
+        private System.Windows.Forms.Label eneTypeLabel;
+        private System.Windows.Forms.Label coldTypeLabel;
+        private System.Windows.Forms.Label eleTypeLabel;
+        private System.Windows.Forms.Label heatTypeLabel;
+        private System.Windows.Forms.Label thrTypeLabel;
+        private System.Windows.Forms.Label impTypeLabel;
+        private System.Windows.Forms.Label cutTypeLabel;
+        private System.Windows.Forms.Label armorTypeLabel;
+        private System.Windows.Forms.Label legArmorLabel;
+        private System.Windows.Forms.Label torsoArmorLabel;
+        private System.Windows.Forms.Label headArmorLabel;
     }
 }
