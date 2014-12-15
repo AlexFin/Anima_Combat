@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anima Combat", "Anima Combat\Anima Combat.csproj", "{B90368EE-6BA3-4067-8CAB-6CDB5FAF0EA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimaCombatLibrary", "AnimaCombatLibrary\AnimaCombatLibrary.csproj", "{C294B56E-9FAC-49A7-B569-39C8C3EB8AD0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimaRollLibrary", "AnimaRollLibrary\AnimaRollLibrary.csproj", "{DCF95D80-D9CF-429A-B543-6C8CA750C1EC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimaRollTester", "AnimaRollTester\AnimaRollTester.csproj", "{593B075B-018C-470A-88D5-CB6C24B74DE6}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimaCombatLibrary", "AnimaCombatLibrary\AnimaCombatLibrary.csproj", "{C294B56E-9FAC-49A7-B569-39C8C3EB8AD0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,6 +21,10 @@ Global
 		{B90368EE-6BA3-4067-8CAB-6CDB5FAF0EA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B90368EE-6BA3-4067-8CAB-6CDB5FAF0EA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B90368EE-6BA3-4067-8CAB-6CDB5FAF0EA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C294B56E-9FAC-49A7-B569-39C8C3EB8AD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C294B56E-9FAC-49A7-B569-39C8C3EB8AD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C294B56E-9FAC-49A7-B569-39C8C3EB8AD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C294B56E-9FAC-49A7-B569-39C8C3EB8AD0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DCF95D80-D9CF-429A-B543-6C8CA750C1EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DCF95D80-D9CF-429A-B543-6C8CA750C1EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DCF95D80-D9CF-429A-B543-6C8CA750C1EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -27,10 +33,6 @@ Global
 		{593B075B-018C-470A-88D5-CB6C24B74DE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{593B075B-018C-470A-88D5-CB6C24B74DE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{593B075B-018C-470A-88D5-CB6C24B74DE6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C294B56E-9FAC-49A7-B569-39C8C3EB8AD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C294B56E-9FAC-49A7-B569-39C8C3EB8AD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C294B56E-9FAC-49A7-B569-39C8C3EB8AD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C294B56E-9FAC-49A7-B569-39C8C3EB8AD0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

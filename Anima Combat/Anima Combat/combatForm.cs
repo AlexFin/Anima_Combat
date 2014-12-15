@@ -112,6 +112,43 @@ namespace Anima_Combat
             }
 
             AnimaCombatLibrary.Initiative.InitiativeRoll(ref initData);
+
+            x = 0;
+
+            foreach (Control init in initiativePanel.Controls)
+            {
+                NumericUpDown initUpDown = (NumericUpDown)init;
+                initUpDown.Text = Convert.ToString(initData[x].baseInitiative);
+                x++;
+            }
+
+            x = 0;
+
+            foreach (Control charName in namePanel.Controls)
+            {
+                TextBox name = (TextBox)charName;
+                name.Text = initData[x].charName;
+                x++;
+            }
+
+            x = 0;
+
+            foreach (Control natmod in naturaPanel.Controls)
+            {
+                NumericUpDown natura = (NumericUpDown)natmod;
+                natura.Text = Convert.ToString(initData[x].naturaModifier);
+                x++;
+            }
+
+            x = 0;
+
+            foreach (Control natmod in rolledInitiativePanel.Controls)
+            {
+                Label rolledInit = (Label)natmod;
+                rolledInit.Text = Convert.ToString(initData[x].rolledInitiative);
+                x++;
+            }
+
         }
     }
 }
